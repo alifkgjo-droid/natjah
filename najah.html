@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>نتيجة الطالب</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Cairo', sans-serif;
+      background-color: #f9f9f9;
+      padding: 20px;
+    }
+    .card {
+      background: white;
+      max-width: 1200px;
+      margin: auto;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-wrap: wrap;
+      overflow: hidden;
+    }
+    .left-section, .right-section {
+      padding: 20px;
+    }
+    .left-section {
+      flex: 2;
+      border-left: 1px solid #eee;
+    }
+    .right-section {
+      flex: 1;
+      position: relative;
+    }
+    .logo {
+      text-align: center;
+      margin-bottom: 15px;
+    }
+    .logo img {
+      max-width: 100px;
+    }
+    .note {
+      background-color: #fde2e2;
+      color: #b00020;
+      padding: 10px;
+      border-radius: 5px;
+      margin-bottom: 20px;
+      font-size: 14px;
+    }
+    h3 {
+      margin-top: 0;
+      color: #333;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      text-align: center;
+      padding: 12px;
+      border-bottom: 1px solid #eee;
+    }
+    th {
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    td.zero {
+      background-color: #ffffff;
+      color: #b00020;
+      font-weight: bold;
+    }
+    .info-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .info-list li {
+      margin-bottom: 10px;
+    }
+    .label {
+      font-weight: bold;
+      color: #555;
+    }
+    .result {
+      color: white;
+      background-color: #28a745;
+      padding: 6px 10px;
+      border-radius: 5px;
+      display: inline-block;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    .footer {
+      text-align: center;
+      margin-top: 30px;
+      color: #777;
+      font-size: 13px;
+    }
+    @media (max-width: 768px) {
+      .card {
+        flex-direction: column;
+      }
+      .left-section, .right-section {
+        border-left: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="left-section">
+      <h3>معلومات النتيجة</h3>
+      <div class="note">
+     ملاحظة: هذه النتيجة لا تُعد وثيقة رسمية ويجب الاعتماد على الوثائق الورقية الصادرة من الوزارة
+      </div>
+          <div class="right-section">
+      <div class="logo">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e9/%D8%B4%D8%B9%D8%A7%D8%B1_%D9%88%D8%B2%D8%A7%D8%B1%D8%A9_%D8%A7%D9%84%D8%AA%D8%B1%D8%A8%D9%8A%D8%A9_%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82%D9%8A%D8%A9.svg" alt="شعار العراق">
+      </div>
+      <ul class="info-list">
+        <li><span class="label">الرقم الامتحاني :</span> 262520244008</li>
+        <li><span class="label">الاسم الرباعي :</span> زهراء محسن عطيه شدود </li>
+        <li><span class="label">اسم المدرسة :</span> بنت الهدى للتعليم المسرع للبنات </li>
+        <li><span class="label">المديرية :</span> واسط </li>
+        <li><span class="label">الصف :</span>  السادس الابتدائي </li>
+        <li><span class="label">المجموعة :</span>  470 </li>
+        <li><span class="label">النتيجة النهائية :</span> <span class="result">ناجح</span></li>
+      </ul>
+    </div>
+      <table>
+        <thead>
+          <tr>
+            <th>المادة</th>
+            <th>الدرجة</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>التربية الاسلامية</td><td>100</td></tr>
+          <tr><td>اللغة العربية</td><td>73</td></tr>
+          <tr><td>اللغة الانكليزية</td><td>100</td></tr>
+          <tr><td>الرياضيات</td><td>67</td></tr>
+          <tr><td>العلوم</td><td>61</td></tr>
+          <tr><td>الاجتماعيات</td><td>100</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+  <div class="footer">
+    جميع الحقوق محفوظة © 2025 وزارة التربية العراقية
+  </div>
+</body>
+</html>
